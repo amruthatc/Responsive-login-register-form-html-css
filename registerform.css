@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/*set body background */
+body{
+background-image: url(textured-backgound.jpg);
+}
+/*This container is only use for center a main div otherwise you can place your code directly. */
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh;
+}
+/* This is the main div */
+.main{
+position: relative;
+display: flex;
+flex-direction: column;
+background-color: #240046;
+max-height: 455px;
+width: 300px;
+overflow: hidden;
+border-radius: 12px;
+box-shadow: 7px 7px 10px 3px #24004628;
+font-family: 'poppins',sans-serif;
+}
+.form{
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: 14px;
+padding: 24px;
+}
+/* checkbox to switch from sign upto login */
+#chk{
+display: none;
+}
+.login{
+position: relative;
+width: 100%;
+height: 100%;
+}
+.login label{
+margin: 25% 0 5% ;
+}
+label{
+color: #fff;
+font-size: 2rem;
+display: flex;
+justify-content: center;
+font-weight: bold;
+cursor: pointer;
+transition: .5s ease-in-out;
+}
+.input{
+width: 100%;
+height: 40px;
+background: #e0dede;
+padding: 10px;
+border: none;
+outline: none;
+border-radius: 4px;
+}
+/* register  */
+.register{
+background-color: #eee;
+border-radius: 70% / 10%;
+transform: translateY(5%);
+transition: .8s ease-in-out;
+
+}
+.register label{
+color: #573b8a;
+transform: scale(.6);
+}
+#chk:checked ~ .register{
+transform: translateY(-60%);
+}
+#chk:checked ~ .register label{
+
+    transform: scale(1);
+    margin: 10% 0 5%;
+}
+
+#chk:checked ~ .login label{
+
+    transform: scale(.6);
+    margin: 5% 0 5%;
+}
+
+
+
+/* button */
+.form button{
+width: 85%;
+height: 40px;
+margin: 12px auto 10%;
+color: #fff;
+background: #573b8a;
+font-size: 1rem;
+font-weight: bold;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: .2s ease-in;
+}
+.form button:hover{
+    background-color: #6d44b8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
